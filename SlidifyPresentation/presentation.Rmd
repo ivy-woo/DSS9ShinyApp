@@ -1,0 +1,61 @@
+---
+title: "Shiny App - plotting and fitting 'swiss' data"
+author: "Ivy Woo"
+date: "24 January, 2021"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## App functions
+
+This is a simple app which generates a scatter plot on data from the 'swiss' dataset in R.
+
+In the app UI, select a variable as the independent variable and another one
+as the dependent variable, a scatter plot of the two variables will be displayed.
+
+A linear regression can be fitted by checking the relevant box.
+The regression line will be added to the plot, the regression coefficients 
+together with the R-squared value will be provided.
+
+## 'swiss' dataset
+
+The app uses data from the 'swiss' dataset which has 6 variables. All 6 variables
+are available as the choice of independent/dependent variable in the app.
+
+Below is how the 'swiss' dataset looks like:
+
+<div style="font-size: 0.8em;">
+```{r, echo=TRUE, comment=NA}
+head(swiss)
+```
+</div>
+
+## Scatter plot
+
+Here is an example of the scatter plot that will be generated, where
+'Agriculture' is chosen as the independent variable and 'Fertility' as the 
+dependent variable.
+
+```{r, fig.align='center', fig.width=6, fig.height=4.5}
+plot(swiss$Agriculture, swiss$Fertility, col="blue", pch=16,
+     xlab="Agriculture", ylab="Fertility")
+grid()
+```
+
+Upon checking the linear regression box, the regression line (in red) will be shown 
+in the plot, the regression coefficients and the R-squared value will be given below the plot.
+
+***
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+Thank you! Have fun in playing around with the app :)
+</center>
+
