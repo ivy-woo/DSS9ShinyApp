@@ -1,6 +1,6 @@
 # Shiny App
 
-This is a repo for the course Developing Data Products on Coursera, the 9th course from the Data Science Specialization. A simple Shiny app is built and the relevant files are made open here.
+This is a repo for the course Developing Data Products on Coursera, the 9th course from the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). A simple Shiny app is built and the relevant files are made open here.
 
 You find the following files in this repo:
 
